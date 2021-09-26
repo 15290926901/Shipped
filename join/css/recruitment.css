@@ -1,0 +1,220 @@
+.section2{
+	background-image: url(../images/zp-img.jpg);
+	position: relative;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.section2 .centent-1200{
+	padding: 40px 0;
+}
+.section2 h2{
+	text-align: center;
+	font-size: 30px;
+	color: #333333;
+	font-weight: 500;
+	margin-bottom: 30px;
+}
+.section2 .box-top{
+	padding: 40px;
+	box-sizing: border-box;
+	background: white;
+}
+.section2 .box-top h3{
+	color: #333;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.8;
+}
+.section2 .box-top h4{
+	color: #333;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.8;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+.section2 .box-top form input{
+	outline: none;
+	font-size: 14px;
+}
+.section2 .box-top form select{
+	width: 243px;
+	font-size: 14px;
+	margin: 0 10px 10px 0;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border: 1px solid #464646;
+	z-index: 10000;
+}
+.section2 .box-top form input[type="text"]{
+	width: 245px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border: 1px solid #464646;
+}
+.section2 .box-top form input[type="button"]{
+	padding: 11px 20px;
+	box-sizing: border-box;
+	background: #6eba44;
+	color: white;
+	cursor: pointer;
+}
+.section2 .box-bot{
+	margin: 25px 0;
+	background: white;
+}
+.section2 .box-bot dl dt{
+	font-weight: normal;
+}
+.section2 .box-bot dl dt>div,.section2 .box-bot dl dd .dd-tit{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1.2% 0;
+	background: #ebe9e9;
+	font-size: 16px;
+	color: #333;
+	line-height: 28px;
+}
+.section2 .box-bot dl .s1{
+	width: 46%;
+	text-indent: 3%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.section2 .box-bot dl .s2{
+	width: 19.5%;
+}
+.section2 .box-bot dl .s3{
+	width: 13%;
+	text-align: center;
+}
+.section2 .box-bot dl .s4{
+	width: 21.5%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: center;
+}
+.section2 .box-bot dl dd .dd-tit{
+	background: url(../images/r_jt1.png) right 20px center no-repeat;
+	cursor: pointer;
+}
+.section2 .box-bot dl dd .dd-tit:hover{
+	background: url(../images/r_jt2.png) right 20px center no-repeat,#00428e !important;
+	color: #fff !important;
+}
+.section2 .box-bot dl dd .dd-box{
+	display: none;
+	background: #f1f3f6;
+	width: 100%;
+	padding: 2% 3%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.section2 .box-bot dl .dd-box .foot{
+	font-size: 14px;
+	line-height: 1.8;
+	color: #666;
+	background: none;
+	height: auto;
+}
+.section2 .box-bot dl .dd-box .foot span{
+	color: #043c77;
+}
+.section2 .box-bot dl .dd-box .text{
+	width: 100%;
+	padding-bottom: 3%;
+	color: #222222;
+	font-size: 12px;
+	line-height: 2.0;
+	overflow: hidden;
+}
+.section2 .box-bot dl .dd-box .text.indent p{
+	margin-left: 76px;
+}
+.section2 .box-bot dl .dd-box .text.indent p:first-of-type{
+	margin: 3px 0;
+	font-weight: 400;
+}
+.section2 .box-bot dl .dd-box .text.indent p span{
+	text-decoration: underline;
+}
+
+
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	
+}
+
+@media screen and (max-width:1370px) {
+	
+	
+}
+
+@media screen and (max-width:1260px) {
+	
+}
+
+@media screen and (max-width:1200px) {
+	
+	
+	
+}
+@media screen and (min-width:1025px) {
+	.section2{
+		background-attachment: fixed;
+	}
+	
+	
+}
+@media screen and (max-width:1024px) {
+	.section2 .box-top{
+		padding: 30px 20px;
+	}
+	.section2 .box-top form select{
+		width: 283px;
+	}
+	.section2 .box-top form .search{
+		float: left !important;
+	}
+	.section2 .box-bot dl .s2,.section2 .box-bot dl .s3{
+		display: none;
+	}
+	.section2 .box-bot dl .s1{
+		width: 60%;
+	}
+	.section2 .box-bot dl .s4{
+		width: 40%;
+	}
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+
+	
+}
+
+@media screen and (max-width:770px) {
+
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	
+}

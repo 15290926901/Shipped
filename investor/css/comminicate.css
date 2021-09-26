@@ -1,0 +1,90 @@
+.section2{
+	padding: 150px 15px;
+	box-sizing: border-box;
+	background: url(../images/touzihd.jpg) center no-repeat;
+	background-size: cover;
+}
+.section2 .comminicate h2{
+	font-size: 35px;
+	font-weight: 300;
+	color: #333333;
+}
+.section2 .comminicate .mb10{
+	line-height: 25px;
+	font-size: 14px;
+	color: #666666;
+}
+.section2 .comminicate ul li{
+	width: 200px;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+.section2 .comminicate ul li img{
+	position: relative;
+	/* top: 10px; */
+	margin-right: 10px;
+}
+.section2 .comminicate .img a{
+	display: block;
+}
+.section2 .comminicate .img a img{
+	max-width: 100%;
+}
+
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	
+}
+
+@media screen and (max-width:1370px) {
+	
+	
+}
+
+@media screen and (max-width:1260px) {
+	
+}
+
+@media screen and (max-width:1200px) {
+	
+	
+}
+
+@media screen and (max-width:1024px) {
+	
+	
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+	.section2 .comminicate ul li{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+}
+
+@media screen and (max-width:770px) {
+
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	.section2{
+		padding: 30px 0;
+	}
+}

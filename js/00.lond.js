@@ -1,0 +1,10 @@
+$(function(){
+	setTimeout(function(){
+		$("#lond").css("display","none")
+		$("#lond-h").removeClass("hide")
+	},1500)
+	$("#lond>div").animate({
+		height:"54px",
+		width:"230px"
+	},1500)
+})

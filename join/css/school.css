@@ -1,0 +1,110 @@
+.section2 .box-bot dl dd .dd-box .dd-cen{
+	color: #222222;
+	line-height: 2;
+	font-size: 14px;
+	padding-bottom: 3%;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen p{
+	background: white;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen p.h28{
+	background: none;
+	height: 28px;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen p.h30{
+	height: 30px;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen p strong{
+	font-size: 15px;
+	color: #000000;
+	background: yellow;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen p span{
+	font-weight: 500;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen p.tit{
+	font-weight: 500;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen h2{
+	font-size: 15px;
+	font-family: '微软雅黑',sans-serif;
+	font-weight: normal;
+	text-align: left;
+	line-height: 42px;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen h2 strong{
+	font-weight: 500;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen .img img{
+	max-width: 100%;
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen .nocol{
+	background: none;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen .nocol h2{
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen .nocol p{
+	background: none;
+}
+.section2 .box-bot dl dd .dd-box .dd-cen .nocol p strong{
+	font-weight: bold;
+	background: none !important;
+	
+}
+
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	
+}
+
+@media screen and (max-width:1370px) {
+	
+	
+}
+
+@media screen and (max-width:1260px) {
+	
+}
+
+@media screen and (max-width:1200px) {
+	
+	
+}
+
+@media screen and (max-width:1024px) {
+	
+	
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+
+	
+}
+
+@media screen and (max-width:770px) {
+
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	
+}
