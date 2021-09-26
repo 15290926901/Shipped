@@ -1,0 +1,39 @@
+.box{
+	width: 420px;
+	position: absolute;
+	left: 50%;
+	margin-left: -210px;
+	top: 50%;
+	margin-top: -150px;
+	text-align: center;
+}
+.img{
+	width: 100%;
+	text-align: center;
+}
+.ts{
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px 0;
+	color: #5b5b5b;
+	font-size: 32px;
+	letter-spacing: 2px;
+	font-family: 楷体";
+}
+.xu{
+	width: 100%;
+	padding-bottom: 30px;
+	color: #5b5b5b;
+	font-size: 14px;
+	line-height: 1.7;
+}
+.fh{
+	width: 100%;
+	color: #2374c8;
+	font-size: 14px;
+	cursor: pointer;
+}
+.fh:hover{
+	color: red !important;
+}

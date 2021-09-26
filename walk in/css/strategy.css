@@ -1,0 +1,80 @@
+.section-tab .tab-wrap>div>a:nth-of-type(2) {
+	background-color: #00428e;
+	color: white !important;
+}
+
+.section2 p{
+	font-size: 14px;
+	line-height: 1.8;
+	text-align: center;
+}
+.section2 p.text{
+	font-size: 20px;
+}
+.section2 p.text strong{
+	font-weight: bold;
+}
+.section2 p img{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	max-width: 737px;
+}
+.section2 p:last-of-type img{
+	max-width: 751px;
+}
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	
+}
+
+@media screen and (max-width:1370px) {
+	
+	
+}
+
+@media screen and (max-width:1260px) {
+	.section-tab .tab-wrap>div>a:nth-of-type(2) {
+		background-color: #fff;
+		color: #000000 !important;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	
+	
+}
+
+@media screen and (max-width:1024px) {
+	
+	
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+
+	
+}
+
+@media screen and (max-width:770px) {
+	
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	
+}

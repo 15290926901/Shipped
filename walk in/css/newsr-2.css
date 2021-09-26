@@ -1,0 +1,135 @@
+.section-tab .tab-wrap>div>a:nth-of-type(6) {
+	background-color: #00428e;
+	color: white !important;
+}
+.section2{
+	padding: 40px 15px;
+	box-sizing: border-box;
+}
+.section-1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+.section-1200 h2{
+	text-align: center;
+	font-size: 35px;
+	font-weight: 400;
+	color: #000000;
+	margin: 20px 0;
+	line-height: 1.8;
+}
+.section-1200 .h-tit{
+	text-align: center;
+	font-weight: 400;
+	color: #888888;
+	line-height: 25px;
+	font-size: 14px;
+}
+.section-1200 .news-text{
+	border-top: 1px solid #e5ecf3;
+	margin-top: 20px;
+	padding: 30px 0;
+}
+.section-1200 .news-text p{
+	text-indent: 2rem;
+	text-align: justify;
+	color: #666;
+	line-height: 1.8;
+	font-size: 21px;
+	color: #666;
+	font-family: "仿宋";
+}
+.section-1200 .news-text .tit{
+	text-align: center;
+	font-family: "方正小标宋简体";
+	font-size: 29px;
+	line-height: 40px;
+}
+.h40{
+	height: 40px;
+}
+.section-1200 .news-text p.tl{
+	text-indent: 0;
+}
+.section-1200 .news-text .text-t{
+	font-family: "黑体";
+}
+.section-1200 .news-text .red{
+	color: #FF2941;
+}
+.section-1200 .news-text .tr{
+	text-align: right;
+}
+.section-1200 .news-text .tr span{
+	display: inline-block;
+	letter-spacing: 2px;
+	margin-right: 21px;
+}
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	
+}
+
+@media screen and (max-width:1370px) {
+	
+	
+}
+
+@media screen and (max-width:1260px) {
+	.section-tab .tab-wrap>div>a:nth-of-type(6) {
+		background-color: #fff;
+		color: #000000 !important;
+	}
+	.section-1200{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	
+	
+}
+
+@media screen and (max-width:1024px) {
+	.section-1200{
+		width: 90%;
+	}
+	.section-1200 h2{
+		font-size: 24px;
+	}
+	
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+	.section-1200 h2{
+		font-size: 20px;
+	}
+	
+}
+
+@media screen and (max-width:770px) {
+	
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	.section-1200 h2{
+		font-size: 18px;
+		text-align: left;
+	}
+}

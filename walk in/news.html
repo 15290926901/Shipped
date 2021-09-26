@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>运达新闻</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="../wow.js/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="../css/00.css" />
+    <link rel="stylesheet" type="text/css" href="css/a.css" />
+    <link rel="stylesheet" type="text/css" href="css/news.css" />
+    <script src="../js/jquery.js"></script>
+    <script src="../js/00.lond.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../wow.js/js/wow.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/00.top.nav.js"></script>
+    <script src="../js/contact.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="js/news.js" type="text/javascript" charset="utf-8"></script> -->
+    <!--   [if lt IE 9]
+  <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src='http://oss.maxcdn.com/libs/respond.js/1.3.0/reapond.min.js'></script>
+  <script src='http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js'></script>
+  [endif] -->
+</head>
+<script>
+    $(function() {
+        $.ajax({
+            url: "js/news.json",
+            dataType: "json", //数据类型
+            type: "get",
+            success: function(data) {
+                $.each(data, function(i, v) {
+                    var divArray = $("<li class='clear'><div class='img fl'><img src='" + v.img + "'></div><div class='text fl'><p class='t'>" + v.title + "</p><p class='bp clear'>" + v.time + "<span><i></i></span></p></div><a href='##'></a></li>");
+                    $(".news-list").append(divArray);
+                })
+
+
+                $(".news-list li:gt(9)").hide(); //默认显示前10个
+                $(".news-fyq a").click(function() {
+                    var index = $(this).index();
+                    var a = index * 10;
+                    var b = a - 11;
+                    console.log(b);
+                    $(this).addClass("news-active").siblings().removeClass("news-active");
+                    $(".news-list li").hide();
+                    $(".news-list li:lt(" + a + "):gt(" + b + ")").show();
+                    if (index == 1) {
+                        $(".news-list li:lt(10)").show();
+                    }
+                    $(".news-list li:eq(87)").addClass("imghide");
+                    $(".news-list li:eq(90)").addClass("imghide");
+                    $(".news-list li:eq(95)").addClass("imghide");
+                    $(".news-list li:eq(96)").addClass("imghide");
+                    $(".news-list li:eq(104)").addClass("imghide");
+                    $(".news-list li:eq(105)").addClass("imghide");
+                    $(".news-list li:eq(106)").addClass("imghide");
+                })
+                $(".news-prev").click(function() {
+                    var index = $(".news-fyq a.news-active").index() - 1;
+                    var a = index * 10;
+                    var b = a - 11;
+                    console.log(index)
+                    if (index > 1) {
+                        $(".news-fyq a:eq(" +
+                            index + ")").removeClass("news-active").prev("a").addClass("news-active");
+                        $(".news-list li").hide();
+                        $(".news-list li:lt(" + a + "):gt(" + b + ")").show();
+                    } else {
+                        $(".news-list li").hide();
+                        $(".news-list li:lt(10)").show();
+                        $(".news-fyq a:eq(0)").addClass("news-active").siblings().removeClass("news-active");
+                    }
+                })
+                $(".news-next").click(function() {
+                    var index = $(".news-fyq a.news-active").index() - 1;
+                    var c = $(".news-fyq a.news-active").index();
+                    var a = c * 10 + 10;
+                    var b = a - 11;
+                    if (index < 10) {
+                        console.log(c)
+                        $(".news-fyq a:eq(" +
+                            index + ")").removeClass("news-active");
+                        $(".news-fyq a:eq(" +
+                            c + ")").addClass("news-active");
+                        $(".news-list li").hide();
+                        $(".news-list li:lt(" + a + "):gt(" + b + ")").show();
+                    } else {
+                        $(".news-list li").hide();
+                        $(".news-list li:gt(99)").show();
+                        $(".news-fyq a:eq(10)").addClass("news-active").siblings().removeClass("news-active");
+                    }
+                })
+            }
+        })
+
+
+    })
+</script>
+
+<body>
+    <div class="lond" id="lond">
+        <div><img src="../images/20190222041015915.png" alt=""></div>
+    </div>
+
+    <div class="lond-h hide" id="lond-h">
+        <!-- head -->
+        <header>
+            <div class="head">
+                <div>
+                    <div class="content clear">
+                        <h1 class="logo fl">
+                            <a href="../index.html"><img src="../images/20190222041015915.png" alt=""></a>
+                        </h1>
+                        <nav class="fl">
+                            <ul class="clear nav-big">
+                                <li class="fl"><a href="../index.html">首页</a></li>
+                                <li class="fl">
+                                    <a href="../walk in/Overview.html">走进运达<i class="fa fa-sort-down"></i></a>
+                                    <div class="level2">
+                                        <div><span></span></div>
+                                        <div>
+                                            <ul>
+                                                <li><a href="../walk in/Overview.html">公司概况</a></li>
+                                                <li><a href="../walk in/strategy.html">企业战略</a></li>
+                                                <li><a href="../walk in/culture.html">企业文化</a></li>
+                                                <li><a href="../walk in/development.html">公司发展历程</a></li>
+                                                <li><a href="../walk in/honor.html">荣誉证书</a></li>
+                                                <li><a href="../walk in/news.html">运达新闻</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fl">
+                                    <a href="../product/solve.html">产品与服务<i class="fa fa-sort-down"></i></a>
+                                    <div class="level2 clear">
+                                        <div id="">
+                                            <span></span>
+                                        </div>
+                                        <div class="clear">
+                                            <ul class="fl">
+                                                <li><a href="../product/solve-1.html">产品与解决方案</a></li>
+                                                <li><a href="../product/solve-2.html">仿真培训解决方案</a></li>
+                                                <li><a href="../product/solve-2.html">列车安全监测解决方案</a></li>
+                                                <li><a href="../product/solve-3.html">信息化解决方案</a></li>
+                                                <li><a href="../product/solve-4.html">牵引与网络控制解决方案</a></li>
+                                                <li><a href="../product/solve-5.html">安全测控解决方案</a></li>
+                                                <li><a href="../product/solve-6.html">专业集成解决方案</a></li>
+                                            </ul>
+                                            <ul class="fl">
+                                                <li><a href="../product/service.html">产品服务</a></li>
+                                                <li><a href="../product/service-1.html">服务理念</a></li>
+                                                <li><a href="../product/service-2.html">运达客户</a></li>
+                                                <li><a href="../product/service-3.html">服务网点</a></li>
+                                                <li><a href="../product/service-4.html">服务咨询</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fl">
+                                    <a href="../investor/relation.html">投资者关系<i class="fa fa-sort-down"></i></a>
+                                    <div class="level2">
+                                        <div><span></span></div>
+                                        <div id="">
+                                            <ul>
+                                                <li><a href="">公司公告</a></li>
+                                                <li><a href="../investor/stock.html">股票概况</a></li>
+                                                <li><a href="../investor/comminicate.html">投资者交流</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fl">
+                                    <a href="../join/talents.html">加入运达<i class="fa fa-sort-down"></i></a>
+                                    <div class="level2">
+                                        <div><span></span></div>
+                                        <div id="">
+                                            <ul>
+                                                <li><a href="../join/talents.html">人才理念</a></li>
+                                                <li><a href="../join/style.html">运达风采</a></li>
+                                                <li><a href="../join/recruitment.html">社会招聘</a></li>
+                                                <li><a href="../join/school.html">校园招聘</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search fr">
+                            <div class="search1 fl">
+                                <span><img src="../images/sousou1.png" alt="" id="search-img"></span>
+                                <form action="../walk in/search.html" target="_blank" id="form-search">
+                                    <div class="form-box clear">
+                                        <input type="text" name="" id="search-K" value="" placeholder="请输入关键字" class="fl" />
+                                        <input type="button" name="" id="search-jump" value="" class="fl" />
+                                        <div class="text" id="search-text">
+                                            <p>控制管理属于</p>
+                                            <p>plugin</p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="search2 fl">
+                                <a href="##"><img src="../images/top-dq.png" alt=""> CN<i class="fa fa-sort-down"></i></a>
+                                <ul>
+                                    <li><a href="##">CN</a></li>
+                                    <li><a href="##">EN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="stock fr"><a href="##">股票代码：300440(运达科技)</a></div>
+                        <div class="nav-btn">
+                            <div><span></span><i></i><i></i></div>
+                        </div>
+                        <!-- 小屏导航 -->
+                        <div class="small-nav" id="small-nav">
+                            <ul class="nav-small">
+                                <li class="sou">
+                                    <form action="" class="clear">
+                                        <input type="text" class="fl" placeholder="输入关键字">
+                                        <input type="button" class="fl">
+                                    </form>
+                                </li>
+                                <li class=""><a href="../index.html">首页</a></li>
+                                <li class="">
+                                    <a href="../walk in/Overview.html">走进运达</a>
+                                    <i class=""></i>
+                                    <div class="level2">
+                                        <div>
+                                            <ul>
+                                                <li><a href="../walk in/Overview.html">公司概况</a></li>
+                                                <li><a href="../walk in/strategy.html">企业战略</a></li>
+                                                <li><a href="../walk in/culture.html">企业文化</a></li>
+                                                <li><a href="../walk in/development.html">公司发展历程</a></li>
+                                                <li><a href="../walk in/honor.html">荣誉证书</a></li>
+                                                <li><a href="../walk in/news.html">运达新闻</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a href="../product/solve.html">产品与服务</a>
+                                    <i class=""></i>
+                                    <div class="level2 clear">
+                                        <div class="clear">
+                                            <ul class="fl">
+                                                <li><a href="../product/solve-1.html">产品与解决方案</a></li>
+                                                <li><a href="../product/service.html">产品服务</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a href="../investor/relation.html">投资者关系</a>
+                                    <i class=""></i>
+                                    <div class="level2">
+                                        <div id="">
+                                            <ul>
+                                                <li><a href="">公司公告</a></li>
+                                                <li><a href="../investor/stock.html">股票概况</a></li>
+                                                <li><a href="../investor/comminicate.html">投资者交流</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <a href="">加入运达</a>
+                                    <i class=""></i>
+                                    <div class="level2">
+                                        <div id="">
+                                            <ul>
+                                                <li><a href="../join/talents.html">人才理念</a></li>
+                                                <li><a href="../join/style.html">运达风采</a></li>
+                                                <li><a href="../join/recruitment.html">社会招聘</a></li>
+                                                <li><a href="../join/school.html">校园招聘</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- banner -->
+        <div class="banner">
+            <img src="../images/zjydbanner.jpg">
+            <div class="banner-content">
+                <p class="title">走进运达</p>
+                <p class="text">about&nbsp;&nbsp;Yunda&nbsp;&nbsp;technology</p>
+                <span></span>
+            </div>
+        </div>
+        <!-- main -->
+        <main>
+            <div class="section-tab">
+                <p class="x-tab">走进运达<i class="fa fa-sort-down"></i></p>
+                <div class="tab-wrap">
+                    <div>
+                        <a href="../walk in/Overview.html">公司概况</a><a href="../walk in/strategy.html">企业战略</a><a href="../walk in/culture.html">企业文化</a><a href="../walk in/development.html">公司发展历程</a><a href="../walk in/honor.html">荣誉证书</a><a href=../
+                            "walk in/news.html" id="tab-xyder">
+								运达新闻<i class="fa fa-sort-down"></i></a>
+                        <ul class="hide">
+                            <li><a href="../walk in/news.html">运达新闻</a></li>
+                            <li><a href="../walk in/news2.html">行业动态</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="section2">
+                <div class="section2-content clear">
+                    <div class="newsleft wow fadeInUp fl" data-wow-delay="1s">
+                        <div class="news-tab"><a href="news.html" class="newsleftTab-active">运达新闻</a><a href="news2.html">行业动态</a></div>
+                        <ul class="news-list">
+                            <!-- <li class="clear">
+                                <div class="img fl"><img src="images/news1.jpg" alt=""></div>
+                                <div class="text fl">
+                                    <p class="t">2021年全国职业院校轨道交通车辆技术专业暑期师资培训班即将开办，诚邀您报名参加！</p>
+                                    <p class="bp clear">2021-06-15<span><i></i></span></p>
+                                </div>
+                                <a href="##" target="_blank"></a>
+                            </li> -->
+                        </ul>
+                        <div class="news-fyq">
+                            <span class="news-prev"></span>
+                            <a href="##" class="news-active">1</a>
+                            <a href="##">2</a>
+                            <a href="##">3</a>
+                            <a href="##">4</a>
+                            <a href="##">5</a>
+                            <a href="##">6</a>
+                            <a href="##">7</a>
+                            <a href="##">8</a>
+                            <a href="##">9</a>
+                            <a href="##">10</a>
+                            <a href="##">11</a>
+                            <span class="news-next"></span>
+                        </div>
+                    </div>
+                    <div class="newsright wow fadeInUp fr" data-wow-delay="0.5s">
+                        <h3>新闻推荐</h3>
+                        <div class="img">
+                            <a href="newsr-1.html"><img src="images/20210209011505150.jpg" alt=""></a>
+                        </div>
+                        <ul>
+                            <li><a class="text-overflow" href="newsr-2.html">致全省投资者朋友的一封信</a></li>
+                            <li><a class="text-overflow" href="newsr-3.html">媒体报道|西安维德：继续专注于航空模拟仿真领域业务拓展</a></li>
+                            <li><a class="text-overflow" href="newsr-4.html">重磅！《新时代交通强国铁路先行规划纲要》发布</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- foot -->
+        <footer>
+            <div class="foot">
+                <div class="content clear">
+                    <img src="../images/20190222041221917.jpg" alt="" class="fr">
+                    <div class="text fl">
+
+                        <p>电子邮箱 : &nbsp;solution@mailyunda.com </p>
+                        <p>联系电话 : 028-82839999&nbsp;&nbsp;&nbsp;</p>
+                        <p>传&nbsp;&nbsp;&nbsp;&nbsp;真 : 028-82839988</p>
+                    </div>
+                    <a href="../index.html">网站首页</a>
+                    <a href="../contact.html">联系我们</a>
+                    <a href="https://p.qiao.baidu.com/cps/chat?siteId=12602629&userId=26472095">在线咨询</a>
+                </div>
+            </div>
+            <p>copyright©2018备案号：<a href="https://beian.miit.gov.cn/#/Integrated/index">蜀ICP备11017790号-1</a>成都运达科技股份有限公司版权所有&nbsp;&nbsp;地址：四川省成都市高新西区新达路11号
+            </p>
+        </footer>
+    </div>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+            new WOW().init();
+        };
+    </script>
+</body>
+
+</html>
