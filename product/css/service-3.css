@@ -1,0 +1,171 @@
+.section2{
+	padding: 55px 0 600px 0;
+	background: url(../images/ditu-img2.jpg) bottom;
+	background-size: cover;
+	position: relative;
+}
+.section2 .bg-img img{
+	max-width: 100%;
+}
+.section2 .bg-img .img1{
+	position: absolute;
+	right: 16%;
+	top: 10%;
+	z-index: 500;
+}
+.section2 .bg-img .img2{
+	display: block;
+	position: absolute;
+	right: 16%;
+	top: 10%;
+	z-index: 600;
+}
+.section2 .bg-img .img{
+	display: block;
+	position: absolute;
+	top: 306px;
+	right: -51px;
+	z-index: 400;
+}
+.section2 .bg-img .img3{
+	top: 365px;
+}
+.section2 .bg-img .img4{
+	top: 365px;
+}
+.section2 .section-1320{
+	width: 1320px;
+	margin: 0 auto;
+	padding: 0 50px;
+	box-sizing: border-box;
+}
+.section2 .section-1320 .small-bg{
+	display: none;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.section2 .section-1320 .small-bg img{
+	max-width: 100%;
+}
+.section2 .section-1320 .small-bg .img1,.section2 .section-1320 .small-bg .img2{
+	width: 90%;
+	margin: 0 auto;
+}
+.section2 .section-1320 .small-bg .img2{
+	position: absolute;
+	top: 0;
+	left: 5%;
+}
+.section2 .section-1320 .list{
+	margin-top: 70px;
+}
+.section2 .section-1320 .list h2{
+	color: white;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.section2 .section-1320 .list ul{
+	margin-top: 20px;
+	position: relative;
+	width: 300px;
+	box-sizing: border-box;
+}
+.section2 .section-1320 .list ul li{
+	width: 33.33%;
+	color: #fff;
+	line-height: 25px;
+	font-size: 14px;
+}
+
+
+/* ***********响应式*********** */
+@media screen and (max-width:1600px) {
+	.section2 .bg-img .img{
+		top: 365px;
+	}
+}
+
+@media screen and (max-width:1441px) {
+	
+}
+
+@media screen and (max-width:1370px) {
+	.section2 .bg-img img{
+		transform: scale(0.9);
+	}
+	.section2 .bg-img .img1,.section2 .bg-img .img1{
+		right: 10%;
+	}
+	.section2 .bg-img .img{
+		right: -80px;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.section2{
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+	.section2 .bg-img{
+		display: none;
+	}
+	.section2 .section-1320{
+		width: 100%;
+	}
+	.section2 .section-1320 .small-bg{
+		display: block;
+	}
+	.section2 .section-1320 .list h2{
+		text-align: center;
+	}
+	.section2 .section-1320 .list ul{
+		width: 100%;
+		padding: 30px 15px;
+	}
+	.section2 .section-1320 .list ul li{
+		text-align: center;
+		width: 25%;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	
+	
+}
+
+@media screen and (max-width:1024px) {
+	.section2 .section-1320{
+		width: 90%;
+	}
+	.section2 .section-1320 .list{
+		margin-top: 20px;
+	}
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+	.section2 .section-1320{
+		padding: 0;
+	}
+	
+}
+
+@media screen and (max-width:770px) {
+
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	
+}

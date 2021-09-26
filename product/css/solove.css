@@ -1,0 +1,223 @@
+/* *******section3****** */
+.sectionThree {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	width: 100%;
+}
+
+.sectionThree ul {
+	width: 100%;
+	height: 100%;
+}
+
+
+.sectionThree ul li {
+	width: 16.6666667%;
+	float: left;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	background: rgba(0, 0, 0, .3);
+	height: 100%;
+	z-index: 100;
+	transition: 0.5s;
+	text-align: center;
+}
+
+.sectionThree ul li>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.sectionThree ul li .page-box {
+	position: absolute;
+	top: 38%;
+	z-index: 101;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.sectionThree ul li .page-box .page3-show {
+	line-height: 1.5;
+	position: relative;
+}
+
+.sectionThree ul li .page-box .page3-show p {
+	font-size: 14px;
+	color: white;
+}
+
+.sectionThree ul li .page-box .page3-show p:nth-of-type(2) {
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+.sectionThree ul li .page-box .page3-show p a {
+	color: #fff;
+	line-height: 1.5;
+}
+
+.sectionThree ul li .page-box .pages-hov {
+	margin: 0 auto;
+	font-size: 16px;
+	position: relative;
+	z-index: 101;
+	transform: translateY(50px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.sectionThree ul li .page-box .pages-hov .bot {
+	height: 1px;
+	width: 0%;
+	margin: 20px auto 24px;
+	position: relative;
+	transition: 0.5s;
+	background-color: white;
+}
+
+.sectionThree ul li .page-box .pages-hov .bot .line {
+	position: absolute;
+	width: 36px;
+	height: 6px;
+	background-color: white;
+	margin-left: -18px;
+	left: 50%;
+	top: -3px;
+}
+
+.sectionThree ul li .page-box .pages-hov p {
+	margin-bottom: 4px;
+}
+
+.sectionThree ul li .page-box .pages-hov p a {
+	position: relative;
+	color: #fff;
+	font-size: 14px;
+	line-height: 19px;
+	display: inline;
+}
+
+.sectionThree ul li .page-box .pages-hov p a::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 0;
+	height: 1px;
+	left: 0;
+	bottom: -2px;
+	background: white;
+	transition: 0.5s;
+}
+
+
+.sectionThree .bgd {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	transition-property: transform;
+	box-sizing: content-box;
+}
+
+.sectionThree .bgd .img {
+	width: 100%;
+	flex-shrink: 0;
+	height: 100%;
+}
+
+.sectionThree .bgd .img img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.sectionThree ul li:hover {
+	background-color: #6eba44;
+	opacity: 0.7;
+}
+
+.sectionThree ul li:hover .page-box .pages-hov .bot,
+.sectionThree ul li .page-box .pages-hov p a:hover::before {
+	width: 100%;
+}
+
+.sectionThree ul li:hover .page-box .pages-hov {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.sectionThree ul li:hover .page-box {
+	top: 22%;
+}
+
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	.sectionThree ul li .page-box .pages-hov {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width:1370px) {
+	
+	
+}
+
+@media screen and (max-width:1260px) {
+	
+}
+
+@media screen and (max-width:1200px) {
+	
+	
+}
+
+@media screen and (max-width:1024px) {
+	.sectionThree ul li {
+		float: left;
+		width: 50%;
+		height: 33.33%;
+	}
+	
+	.sectionThree ul li .page-box .pages-hov {
+		display: none;
+	}
+	
+	.sectionThree ul li:hover .page-box {
+		top: 38%;
+	}
+	
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+
+	
+}
+
+@media screen and (max-width:770px) {
+
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	
+}

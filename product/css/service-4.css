@@ -1,0 +1,142 @@
+.section2{
+	padding: 108px 0 100px 60px;
+	box-sizing: border-box;
+	background: url(../images/shouhou.jpg);
+	overflow: hidden;
+}
+.section2 .section-1200{
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.section2 .section-1200 .box{
+	width: 544px;
+}
+.section2 .section-1200 .box h3,.section2 .section-1200 .box>p{
+	color: #fff;
+}
+.section2 .section-1200 .box h3{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 29px;
+}
+.section2 .section-1200 .box>p{
+	font-size: 14px;
+	line-height: 25px;
+}
+.section2 .section-1200 .box form p{
+	width: 100%;
+	background-color: white;
+	border-radius: 5px;
+	margin-top: 20px;
+	line-height: 50px;
+	position: relative;
+}
+.section2 .section-1200 .box form p>span{
+	display: block;
+	position: absolute;
+	width: 100%;
+	line-height: 20px;
+	font-size: 14px;
+	color: red;
+	left: 0;
+	top: 100%;
+}
+.section2 .section-1200 .box form p img{
+	float: left;
+	margin: 14px 20px 0 20px;
+	display: block;
+}
+.section2 .section-1200 .box form p input{
+	font-size: 14px;
+	border: none;
+	color: #888888;
+	outline: none;
+	width: 80%;
+	box-sizing: border-box;
+	padding: 1px 2px;
+}
+.section2 .section-1200 .box form p textarea{
+	font-family: "微软雅黑";
+	width: 80% !important;
+	resize: none;
+	outline: none;
+	font-size: 16px;
+	height: 130px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: none;
+	color: #888888;
+}
+.section2 .section-1200 .box form p:last-of-type{
+	background: #6ebb47;
+}
+.section2 .section-1200 .box form p:last-of-type input{
+	color: #fff;
+	border: none;
+	background: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 16px;
+	line-height: 50px;
+}
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	
+}
+
+@media screen and (max-width:1370px) {
+	
+	
+}
+
+@media screen and (max-width:1260px) {
+	.section2 .section-1200{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	
+	
+}
+
+@media screen and (max-width:1024px) {
+	.section2 .section-1200{
+		width: 90%;
+	}
+	
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+	.section2{
+		padding: 30px;
+	}
+	.section2 .section-1200 .box{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:770px) {
+
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	
+}

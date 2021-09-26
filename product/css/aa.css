@@ -1,0 +1,341 @@
+.banner{
+	background: url(../images/cp-bkt.jpg);
+}
+.banner .centent{
+	width: 1320px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding-left: 15px;
+}
+.banner .centent ul li{
+	margin: 55px 0;
+	border-right: 2px solid #fff;
+	padding-right: 20px;
+	line-height: 24px;
+	margin-right: 20px;
+}
+.banner .centent ul li a{
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+.drop-down{
+	display: none;
+	width: 100%;
+	position: relative;
+}
+.drop-down .fzpx{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #00428e;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+.drop-down .fzpx i{
+	color: #fff;
+	display: inline-block;
+	margin-left: 5px;
+	position: relative;
+	top: -3px;
+}
+.drop-down .centent{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	z-index: 1000;
+	display: none;
+}
+.drop-down .centent li{
+	width: 100%;
+	text-align: center;
+	margin: 1px 0;
+	border-bottom: 1px solid #ccc;
+}
+.drop-down .centent li a{
+	color: #333;
+	padding: 3% 0;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.section1{
+	background: #f0f3f6;
+}
+.centent{
+	width: 1320px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding-left: 15px;
+}
+.section1 .centent img{
+	float: left;
+	margin-top: 17.5px;
+}
+.section1 .centent a{
+	font-size: 15px;
+	padding: 0 5px;
+	color: #666666;
+	line-height: 50px;
+}
+
+.section2{
+	padding: 40px 0;
+}
+.section2 .box{
+	padding-left: 0;
+}
+.section2 .box .left-box{
+	width: 25%;
+	box-sizing: border-box;
+	padding: 0 20px 0 15px;
+}
+.section2 .box .right-box{
+	width: 75%;
+	box-sizing: border-box;
+	padding: 0 25px;
+}
+.section2 .box .left-box h4{
+	line-height: 50px;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 15px;
+	background: #00428e;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+.section2 .box .left-box h4 i{
+	color: #fff;
+	position: relative;
+	float: right;
+	top: 10px;
+	font-size: 30px;
+}
+.section2 .box .left-box li{
+	line-height: 40px;
+	font-size: 15px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	margin-top: 15px;
+	font-weight: 400;
+	border-bottom: 1px solid #e3e6ea;
+}
+.section2 .box .left-box li a{
+	color: #333;
+}
+.section2 .box .left-box li a i{
+	position: relative;
+	float: right;
+	top: 7px;
+	font-size: 25px;
+	color: #00428e;
+	opacity: 0;
+}
+.section2 .box .left-box li a.active-list,.section2 .box .left-box li a.active-list i{
+	color: #00428e !important;
+	opacity: 1 !important;
+}
+.section2 .box .left-box ul li a:hover{
+	color: #00428e !important;
+}
+
+.section2 .box .right-box>h3{
+	line-height: 50px;
+	border-left: 2px solid #00428e;
+	padding-left: 15px;
+	background: #f3f5f7;
+	box-sizing: border-box;
+	color: #000;
+}
+.section2 .box .right-box h3 ul{
+	margin-right: 30px;
+}
+.section2 .box .right-box h3 ul li a{
+	font-size: 16px;
+	padding: 0 18px;
+	font-weight: 400;
+}
+.section2 .box .right-box .rightBox{
+	padding: 20px 0;
+	border-bottom: 1px solid #e2e6ea;
+}
+.section2 .box .right-box .rightBox h3{
+	box-sizing: border-box;
+	padding-left: 10px;
+	color: #333;
+}
+.section2 .box .right-box .rightBox .rightBox-cond{
+	box-sizing: border-box;
+	padding: 20px 20px 0 0;
+}
+.section2 .box .right-box .rightBox .rightBox-cond .h28{
+	height: 28px;
+}
+.section2 .box .right-box .rightBox .rightBox-cond p{
+	line-height: 25px;
+	font-size: 16px;
+	color: #666;
+	text-indent: 2rem;
+}
+.section2 .box .right-box .rightBox .rightBox-cond p.img{
+	text-align: center;
+	text-indent: 0;
+}
+.section2 .box .right-box .rightBox .rightBox-cond p.img img{
+	max-width: 100%;
+}
+.section2 .box .right-box .rightBox .rightBox-cond p.img span{
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	line-height: 21px;
+	margin-bottom: 24px;
+}
+.section2 .box .right-box .rightBox .rightBox-cond p.Highlights{
+	line-height: 22px;
+	margin-left: 28px;
+	font-size: 16px;
+	font-weight: bold;
+	text-indent: 0;
+}
+.section2 .box .right-box .rightBox .rightBox-cond p.Highlights span{
+	color: #666;
+	font-family: "微软雅黑";
+	font-weight: normal;
+}
+.section2 .box .right-box .rightBox .rightBox-cond p.Highlights-text{
+	margin-left: 66px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.section2 .box .right-box .rightBox ul{
+	margin: 20px 0;
+}
+.section2 .box .right-box .rightBox ul li{
+	width: 33.33%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.section2 .box .right-box .rightBox ul li img{
+	max-width: 100%;
+	text-align: center;
+}
+.section2 .box .right-box .rightBox ul li p{
+	background: #e6e4e3;
+	line-height: 50px;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #333;
+	
+}
+
+
+.section-menu{
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #000000;
+	opacity: 0.7;
+	z-index: 500;
+	width: 100%;
+	display: none;
+}
+.section-menu .centent-1320{
+	width: 1320px;
+	margin: 0 auto;
+}
+.section-menu .centent-1320 ul li{
+	line-height: 50px;
+	padding: 0 10px;
+	margin: 0 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+.section-menu .centent-1320 ul li a{
+	color: #a9a9a9;
+}
+.section-menu .centent-1320 ul li.menu-active{
+	background: url(../images/red_30.png);
+}
+.section-menu .centent-1320 ul li.menu-active a{
+	color: #fff !important;
+}
+
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	
+}
+
+@media screen and (max-width:1370px) {
+	
+	
+}
+
+@media screen and (max-width:1260px) {
+	.banner {
+		display: none;
+	}
+	.drop-down{
+		display: block;
+	}
+	.centent,.section-menu .centent-1320{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:1100px) {
+	.section2 .box .left-box{
+		display: none;
+	}
+	.section2 .box .right-box{
+		width: 100%;
+		float: none;
+	}
+	
+}
+
+@media screen and (max-width:1024px) {
+	.centent,.section-menu .centent-1320{
+		width: 90%;
+	}
+	
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+	.section2 .box .right-box .rightBox ul li{
+		width: 50%;
+	}
+	
+}
+
+@media screen and (max-width:770px) {
+
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	
+}

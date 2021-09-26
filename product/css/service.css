@@ -1,0 +1,195 @@
+.banner{
+	background: url(../images/loader.gif) no-repeat scroll center center,#fff;
+	color: #fff;
+	position: relative;
+}
+.banner>img{
+	max-width: 100%;
+}
+.banner .centent{
+	position: absolute;
+	left: 10%;
+	top: 35%;
+	width: 80%;
+	text-align: center;
+	color: #fff;
+}
+.banner .centent>div{
+	position: relative;
+}
+.banner .centent>div .tit{
+	font-size: 35px;
+	line-height: 1.2;
+	font-weight: 400;
+	transition: all 0.5s;
+}
+.banner .centent>div .text{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 10px 0;
+	transition: all 0.5s;
+}
+.banner .centent>div .line{
+	display: block;
+	height: 1px;
+	width: 50px;
+	margin: 20px auto 0;
+	background: #fff;
+	transition: all 0.5s;
+}
+.section-tab{
+	height: 56px;
+	background: #f0f3f6;
+}
+.section-tab .nav-list{
+	width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 56px;
+	height: 56px;
+	transition: height 0.3s;
+}
+.section-tab .nav-list a{
+	display: inline-block;
+	color: #333333;
+	text-align: center;
+	padding: 0 30px;
+}
+.section-tab .nav-list a.navList-active{
+	background: #00428e;
+	color: #fff;
+}
+.section-tab2{
+	display: none;
+	z-index: 100;
+	position: relative;
+}
+.section-tab2 .product-down{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	background: #00428e;
+	cursor: pointer;
+}
+.section-tab2 .product-down i{
+	position: relative;
+	display: inline-block;
+	top: -3px;
+	color: #fff;
+	margin-left: 5px;
+}
+.section-tab2 .sectionTab-nav{
+	position: absolute;
+	width: 100%;
+	top: 100%;
+	display: none;
+	left: 0;
+	z-index: 1000;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+}
+.section-tab2 .sectionTab-nav li{
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	margin: 1px 0;
+}
+.section-tab2 .sectionTab-nav li a{
+	font-size: 14px;
+	padding: 3% 0;
+	color: #333;
+	display: inline-block;
+}
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	.banner .centent>div .tit{
+		font-size: 26px;
+	}
+	.banner .centent>div .text{
+		font-size: 18px;
+	}
+	.section-tab .nav-list,.section-tab{
+		line-height: 48px;
+		height: 48px;
+	}
+}
+
+@media screen and (max-width:1370px) {
+	
+	
+}
+
+@media screen and (max-width:1260px) {
+	.banner .centent>div .tit{
+		font-size: 20px;
+	}
+	.banner .centent>div .text{
+		font-size: 24px;
+	}
+	.section-tab{
+		display: none;
+	}
+	.section-tab2{
+		display: block;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	
+	
+}
+
+@media screen and (max-width:1024px) {
+	.banner .centent{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.banner .centent>div .line{
+		height: 2px;
+		margin-top: 15px;
+	}
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+
+	
+}
+
+@media screen and (max-width:770px) {
+.banner .centent>div .text{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	.banner .centent>div .tit{
+		font-size: 16px;
+	}
+	.banner .centent>div .text{
+		font-size: 12px;
+	}
+	.banner .centent>div .line{
+		display: none;
+	}
+}
