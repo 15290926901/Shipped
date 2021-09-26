@@ -1,0 +1,260 @@
+/* ***********banner*********** */
+.banner{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.banner img{
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+.banner .banner-content{
+	position: absolute;
+	left: 10%;
+	top: 35%;
+	width: 80%;
+	text-align: center;
+	color: white;
+}
+.banner .banner-content .title{
+	font-size: 35px;
+	line-height: 1.2;
+	font-weight: 400;
+}
+.banner .banner-content .text{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 10px 0;
+}
+/* ***********main*********** */
+/* main{
+	height: 1000px;
+} */
+.section-tab{
+	width: 100%;
+	height: 56px;
+	background-color: #f0f3f6;
+	position: relative;
+	transition: height 0.3s;
+}
+.section-tab .x-tab{
+	display: none;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	color: white;
+	line-height: 50px;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: #00428e;
+	z-index: 100;
+}
+.section-tab .x-tab i{
+	display: inline-block;
+	margin-left: 5px;
+	position: relative;
+	top: -4px;
+}
+.section-tab .tab-wrap{
+	height: 56px;
+	line-height:56px;
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	transition: height 0.3s;
+}
+.section-tab .tab-wrap a{
+	color: #333333;
+	text-align: center;
+	display: inline-block;
+	padding: 0 30px;
+}
+.section-tab .tab-wrap a i{
+	display: none;
+}
+.tab-wrap-hover,.section-tab .tab-wrap a:hover,.section-tab .tab-wrap a:active{
+	background-color: #00428e;
+	color: white !important;
+}
+.section6{
+	max-width: 1200px;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.section6 .section6-content{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.section6 .section6-content .text1{
+	width: 35%;
+	margin-bottom: 15px;
+}
+.section6 .section6-content .text1 p{
+	font-size: 14px;
+	color: #666;
+	line-height: 25px;
+}
+.section6 .section6-content .text1 p:first-of-type{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 32px;
+}
+.section6 .section6-content .text2{
+	width: 65%;
+	height: 500px;
+}
+.section6 .section6-content .text2 .map{
+	height: 500px;
+}
+
+
+/* ***********响应式*********** */
+@media screen and (max-width:1550px) {
+	
+}
+
+@media screen and (max-width:1441px) {
+	.banner .banner-content .title{
+		font-size: 26px;
+	}
+	.section-tab{
+		height: 48px;
+	}
+	.section-tab .tab-wrap{
+		height: 48px;
+		line-height: 48px;
+	}
+}
+
+@media screen and (max-width:1370px) {
+	
+	.section6 .section6-content .top{
+		display: none;
+	}
+	.section6 .section6-content .text1{
+		display: block;
+	}
+	.section6 .section6-content .text2{
+		width: 63%;
+	}
+}
+
+@media screen and (max-width:1260px) {
+	.banner .banner-content .title{
+		font-size: 20px;
+	}
+	.banner .banner-content .text{
+		font-size: 24px;
+	}
+	.section-tab{
+		height: auto;
+	}
+	.section-tab .x-tab{
+		display: block;
+	}
+	.section-tab .tab-wrap{
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 50px;
+		background-color: #fff;
+		z-index: 100;
+		display: none;
+	}
+	.section-tab .tab-wrap a{
+		display: block;
+		width: 100%;
+		padding: 3% 0;
+		border-bottom: 1px solid #ccc;
+		margin: 1px 0;
+		color: #000;
+		position: relative;
+	}
+	.section-tab .tab-wrap a:hover,.section-tab .tab-wrap a:active{
+		background-color: #fff;
+		color: #000000 !important;
+	}
+	.section-tab .tab-wrap a i{
+		display: inline;
+		position: absolute;
+		right: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.section-tab .tab-wrap>div{
+		position: relative;
+		background-color: #fff;
+	}
+	.section-tab .tab-wrap>div ul{
+		position: absolute;
+		width: 100%;
+		/* display: none; */
+		left: 0;
+		top: 100%;
+		background-color: #fff;
+	}
+	.section-tab .tab-wrap ul a{
+		border: none;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	
+	.section6 .section6-content{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.banner .banner-content{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.section6 .section6-content{
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+}
+@media screen and (max-width:1000px){
+	
+}
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:860px) {
+
+	.section6 .section6-content{
+		padding: 60px 0 30px;
+	}
+	.section6 .section6-content .text1,.section6 .section6-content .text2{
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width:770px) {
+	.banner .banner-content .text{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width:758px) {
+	
+}
+
+@media screen and (max-width:641px) {
+	.banner .banner-content .title{
+		font-size: 16px;
+	}
+	.banner .banner-content .text{
+		font-size: 12px;
+	}
+}

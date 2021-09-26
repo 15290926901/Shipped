@@ -1,0 +1,516 @@
+body{
+	overflow-x: hidden;
+}
+.lond{
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	left: 0;
+	top: 0;
+	z-index: 10000;
+}
+.lond div{
+	width: 150px;
+	height: 30px;
+	position: absolute;
+	left: calc(50% - 75px);
+	top: calc(50% - 15px);
+}
+.lond div img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.content{
+	max-width: 1320px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 15px;
+	margin: 0 auto;
+	position: relative;
+}
+/* *******头部开始****** */
+header{
+	position: relative;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 110;
+	height: 60px;
+	background-color: white;
+}
+.head>div{
+	position: relative;
+	transition: 1s;
+	height: 60px;
+	/* box-shadow: 0 1px 3px rgb(0 0 0/15%); */
+}
+
+.head .content .logo{
+	height: 45px;
+	margin: 7px 20px 0 0;
+}
+.head .content .logo img{
+	height: 45px;
+}
+.head .content .nav-big li{
+	position: relative;
+}
+.head .content .nav-big>li>a{
+	line-height: 60px;
+	padding: 0 26px;
+	font-size: 16px;
+	color: #333333;
+	display: block;
+	height: 60px;
+}
+.head .content .nav-big li a i{
+	color: #ccc;
+	margin-left: 5px;
+	position: relative;
+	top: -2px;
+}
+.head .content .nav-big li .level2{
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	left: 0;
+	background: transparent;
+	box-sizing: border-box;
+	z-index: 500;
+	display: none;
+	transition: all 0.7s;
+}
+.head .content .nav-big li:nth-of-type(2n) .level2 ul,.head .content .nav-big li:nth-of-type(5n) .level2 ul{
+	width: 100%;
+}
+.head .content .nav-big li .level2>div:first-of-type{
+	height: 12px;
+	background-color: transparent;
+	position: relative;
+}
+.head .content .nav-big li .level2>div:last-of-type{
+	padding: 0 10px 0px;
+	width: 100%;
+	box-sizing: border-box;
+	background: #e1e1e1 !important;
+	opacity: 0.8;
+	height: auto;
+}
+.head .content .nav-big li .level2 span{
+	display: block;
+	border-top: transparent 8px solid;
+	border-right: transparent 8px solid;
+	border-bottom: #e1e1e1 8px solid;
+	opacity: 0.8;
+	border-left: transparent 8px solid;
+	width: 0;
+	height: 0;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	transition: all 0.7s;
+}
+.head .content .nav-big li:nth-of-type(3) .level2 span{
+	left: 65px;
+}
+.head .content .nav-big li .level2 li{
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 2px 0;
+	border-bottom: 1px solid #c7c4c4;
+}
+.head .content .nav-big li .level2 li:last-of-type{
+	border-bottom: none;
+}
+.head .content .nav-big li .level2 li a{
+	line-height: 36px;
+	font-size: 14px;
+	padding: 0;
+}
+.head .content .nav-big li .level2 li:hover a{
+	color: #67b869 !important;
+}
+.head .content .nav-big li:nth-of-type(3) .level2{
+	width: 340px;
+	z-index: 500;
+	transition: all 0.7s; 
+}
+.head .content .nav-big li:nth-of-type(3) .level2 ul{
+	padding: 0 30px 10px 15px;
+	box-sizing: border-box;
+	position: relative;
+}
+.head .content .nav-big li:nth-of-type(3) .level2 ul:first-of-type::after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 6%;
+	right: 5px;
+	width: 1px;
+	height: 60%;
+	background: url(../images/topxian.png);
+}
+.head .content .nav-big li:nth-of-type(3) .level2 ul:last-of-type{
+	padding: 0 20px 10px 15px;
+}
+.head .content .nav-big li:nth-of-type(3) .level2 ul li{
+	-ms-text-align-last: left;
+	text-align-last: left;
+}
+.head .content .nav-big li:nth-of-type(3) .level2 ul li:first-of-type{
+	font-weight: bold;
+}
+.head .content .nav-big li:nth-of-type(3) .level2 ul li a{
+	padding-right: 10px;
+}
+.head .content .nav-big li:nth-of-type(3) .level2 ul:last-of-type li a{
+	padding-right: 20px;
+}
+.head .content .nav-big li:nth-of-type(3) .level2 ul li:first-of-type:hover a{
+	color: #333 !important;
+}
+.head .content .stock{
+	height: 60px;
+	margin-right: 10px;
+}
+.head .content .stock a{
+	line-height: 60px;
+	font-size: 12px;
+	color: #00438e;
+}
+.head .content .search{
+	 margin-right: 60px;
+}
+.head .content .search>div{
+	display: inline-block;
+}
+.head .content .search .search1{
+	position: relative;
+}
+.head .content .search .search1 span{
+	padding-right: 13px;
+	display: inline-block;
+	height: 60px;
+	position: relative;
+}
+.head .content .search .search1 span::after{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	background: #CCCCCC;
+}
+.head .content .search .search1 img{
+	margin-top: 21.5px;
+	cursor: pointer;
+	position: relative;
+}
+.head .content .search .search1 form{
+	position: absolute;
+	display: none;
+	top: 60px;
+	width: 240px;
+	left: -178px;
+}
+.head .content .search .search1 form .form-box{
+	width: 100%;
+	position: relative;
+	z-index: 200;
+	line-height: 32px;
+	padding-top: 2px;
+}
+.head .content .search .search1 form .form-box .text{
+	width: 190px;
+	box-sizing: border-box;
+	background: #fff;
+	padding: 10px 0;
+	border-radius: 4px;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	font-size: 14px;
+	display: none;
+}
+.head .content .search .search1 form .form-box .text p{
+	display: block;
+	box-sizing: border-box;
+	padding:0 0 0 10px;
+	line-height: 36px;
+	height: 36px;
+	color: #000;
+	cursor: pointer;
+}
+.head .content .search .search1 form .form-box .text p:hover{
+	background: #e8e8e9 !important;
+}
+.head .content .search .search1 form .form-box input[type="text"]{
+	line-height: 32px;
+	width: 190px;
+	border: none;
+	color: #666666;
+	border-left: 1px solid #999;
+	background-color: #fff;
+	padding: 0 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+.head .content .search .search1 form .form-box input[type="button"]{
+	width: 32px;
+	height: 32px;
+	background: url(../images/pcsou1.jpg) no-repeat center/cover;
+}
+.head .content .search .search2{
+	line-height: 60px;
+	position: relative;
+}
+.head .content .search .search2 a{
+	padding-left: 10px;
+	color: #9B9B9B;
+	position: relative;
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+.head .content .search .search2 a i{
+	top: -4px;
+	position: relative;
+	color: #ccc;
+	margin-left: 5px;
+}
+.head .content .search .search2 ul{
+	position: absolute;
+	right: -50px;
+	top: 10px;
+	opacity: 0;
+	transition: all 1s;
+}
+.head .content .search .search2 ul li{
+	line-height: 20px;
+	display: block;
+	padding: 0 15px;
+	text-align: center;
+}
+.head .content .search .search2 ul li a{
+	line-height: 20px;
+	color: #9B9B9B;
+	padding: 0;
+}
+.head .content .search .search2:hover ul{
+	opacity: 1;
+}
+.head .content .nav-btn{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 25px;
+	height: 30px;
+	box-sizing: border-box;
+	display: none;
+	cursor: pointer;
+	z-index: 100;
+}
+.head .content .nav-btn div{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.head .content .nav-btn span{
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: #333333;
+	margin: 7px 0 0 5px;
+	transition: all 0.5s; 
+}
+.head .content .nav-btn i{
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: #333333;
+	position: absolute;
+	left: 5px;
+	top: 7px;
+	transition: all 0.5s; 
+}
+.head .content .nav-btn i:last-of-type{
+	top:14px;
+}
+.small-nav{
+	width: 100%;
+	height: 100%;
+	background: #0068b7;
+	opacity: 0.8;
+	position: fixed;
+	left: -100%;
+	top: 0;
+	display: none;
+}
+.small-nav>ul{
+	margin-top: 96px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.small-nav>ul>li{
+	padding: 0 20px;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgba(225,225,225,0.5);
+	position: relative;
+}
+.small-nav ul li:first-of-type{
+	border: none;
+}
+.small-nav ul li i{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 50%;
+	height: 46px;
+	background: url(../images/lmfooter_bottom.png) right 18px no-repeat;
+	z-index: 99;
+	cursor: pointer;
+}
+.small-nav ul li form{
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.small-nav ul li form input[type="text"]{
+	width: 90%;
+	padding: 0 5px;
+	box-sizing: border-box;
+	border: none;
+	color: #999999;
+	line-height: 28px;
+}
+.small-nav ul li form input[type="button"]{
+	display: block;
+	width: 10%;
+	box-sizing: border-box;
+	border: none;
+	color: #999999;
+	line-height: 32px;
+	background: url(../images/pcsou1.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+.small-nav ul li a{
+	color: #fff;
+	line-height: 46px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.small-nav ul li>div{
+	display: none;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 0 10px 40px;
+}
+.small-nav ul li div a{
+	font-weight: normal;
+}
+.small-nav ul li div ul li a{
+	line-height: 30px;
+}
+/* *******头部结束****** */
+
+/* *******尾部开始****** */
+.foot{
+	height: 120px;
+	background-color: #00428e;
+	overflow: hidden;
+}
+.foot .content .text{
+	display: none;
+}
+.foot .content a{
+	line-height: 120px;
+	font-size: 14px;
+	color: #fff;
+	padding-right: 30px;
+	display: inline-block;
+}
+.foot .content img{
+	margin-top: 20px;
+	width: 84px;
+}
+.foot .content .text{
+	width: 70%;
+	padding-top: 15px;
+}
+.foot .content .text p{
+	width: 100%;
+	font-size: 14px;
+	color: #fff;
+	padding: 0 15px;
+	line-height: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	text-align: left !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+footer>p{
+	line-height: 1.75em;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 14px;
+	text-align: center !important;
+	color: #888888;
+	margin: 0 auto;
+}
+footer p a{
+	display: inline-block;
+	font-size: 14px;
+	color: #002060;
+	text-decoration: underline;
+}
+footer p a:hover{
+	text-decoration: underline;
+}
+/* *******尾部结束****** */
+
+@media screen and (max-width:1320px) {
+	.head .content .search,.head .content .stock{
+		display: none;
+	}
+}
+@media screen and (max-width:1200px) {
+	header,.head>div{
+		height: 55px;
+	}
+	.head .logo{
+		width: 100%;
+		margin-top: 15px !important;
+	}
+	.head nav,.foot .content a{
+		display: none;
+	}
+	.head .logo img{
+		width: 119px;
+		height: auto !important; 
+	}
+	.head .content .nav-btn,.small-nav,.foot .content .text{
+		display: block;
+	}
+	.foot .content img{
+		float: left !important;
+		 margin-right: 15px;
+	}
+}
+@media screen and (max-width:1024px){
+	.foot .content .text p{
+		padding: 0;
+	}
+}
+@media screen and (max-width:758px) {
+	.small-nav>ul{
+		margin-top: 61px;
+	}
+}

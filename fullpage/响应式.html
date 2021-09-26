@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>fullPage.js 响应式演示_fullPage.js全屏滚动插件</title>
+<meta name="keywords" content="fullPage.js,全屏滚动,jQuery全屏滚动,fullPage全屏滚动,jQuery插件">
+<meta name="description" content="fullPage.js 是一个基于 jQuery 的插件，它能够很方便、很轻松的制作出全屏网站。本站详细介绍fullPage各初始化属性设置。如果你也希望你的网站能设计成全屏的，显得更上档次，你可以试试fullPage.js。">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<style>
+.section { text-align: center; font: 30px "Microsoft Yahei"; color: #fff;}
+.section p{ font: 30px "Microsoft Yahei";}
+</style>
+</head>
+<body>
+<div id="fullPage">
+  <div class="section">
+    <h3>第一屏</h3>
+    <p>根据可视区域大小启用/关闭全屏滚动效果</p>
+  </div>
+  <div class="section">
+    <h3>第二屏</h3>
+    <p>如果可视区宽度小于1024，则关闭全屏滚动效果，使用自带的滚动条</p>
+  </div>
+  <div class="section">
+    <h3>第三屏</h3>
+    <p>请试着调整浏览器大小并查看滚动条是否出现</p>
+  </div>
+  <div class="section">
+    <h3>第四屏</h3>
+    <p>更多设置 请访问：http://fullpage.81hu.com</p>
+  </div>
+</div>
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script>
+$(function(){
+    $('#fullPage').fullpage({
+        sectionsColor : ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90']
+    });
+
+    $(window).resize(function(){
+        autoScrolling();
+    });
+
+    function autoScrolling(){
+        var $ww = $(window).width();
+        if($ww < 1024){
+            $.fn.fullpage.setAutoScrolling(false);
+        } else {
+            $.fn.fullpage.setAutoScrolling(true);
+        }
+    }
+
+    autoScrolling();
+});
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?319df46884458c3fbee36b0cc6e390e8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
