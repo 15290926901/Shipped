@@ -737,8 +737,7 @@
 								<p>公司网址： http://www.yd-tec.com </p>
 							</div>
 							<div class="text2 fl">
-								<div class="map" id="map">
-									<iframe src="./map.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+								<div class="map" id="allmap">
 								</div>
 							</div>
 							<div class="foot-bottom fl">
@@ -775,6 +774,9 @@
 			</footer>
 		</div>
 		<!-- <script src="Swiper/js/scalc.js" type="text/javascript" charset="utf-8"></script> -->
+		<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=5DZrvbBrmvN3nSdck0i2iQBeRjziiVhZ"></script>
+  		<script type="text/javascript" src="//api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+  		<link rel="stylesheet" href="//api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
 		<script>
 			if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
 				new WOW().init();
@@ -856,6 +858,14 @@
 			box.onmouseout = function() { //鼠标移出
 			    t = setTimeout(auto, 1000);
 			}
+			
+			//地图配置
+   			var map = new BMap.Map("allmap");
+   			var point = new BMap.Point(104.085916, 30.657281);
+   			map.centerAndZoom(point, 15);
+   			map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+   			map.addControl(new BMap.NavigationControl());
+   			//map.centerAndZoom("成都",18)
 		</script>
 		<script src="lizicanvan/js/lizi.js" type="text/javascript" charset="utf-8"></script>
 		
